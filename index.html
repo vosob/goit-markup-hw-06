@@ -379,18 +379,72 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-subscribe">
+            <form class="foo-form" autocomplete="off">
                 <p class="media-title">Subscribe</p>
-            </div>
+                <div class="footer-subscribe">
+                    <label class="subscribe-label" for="email">
+                        <input class="subscribe-form-input" type="email" name="email" placeholder=" ">
+                        <span class="subscribe-span">E-mail</span>
+                    </label>
+                    <button class="btn-subscribe " type="submit">
+                        <span>Subscribe</span>
+                        <svg class="socials-icon" width="24" height="20">
+                            <use href="./images/icons/icons.svg#icon-foo-mess"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close-btn" type="button" data-modal-close>
                 <svg class="modal-close-icon" width="8" height="8">
-                    <use href="./images/icons.svg#modal-close-icon"></use>
+                    <use href="./images/icons/icons.svg#modal-close-icon"></use>
                 </svg>
             </button>
+            <h2 class="modal-title">Leave your contacts and we will call you back</h2>
+            <form class="form">
+                <label class="form-label" for="name">Name</label>
+                <div class="form-fild">
+                    <input class="form-input" type="text" name="user-name" id="name" autofocus>
+                    <svg class="form-icon" width="18" height="24">
+                        <use href="./images/icons/icons.svg#modal-name"></use>
+                    </svg>
+                </div>
+                <label class="form-label" for="tel">Phone</label>
+                <div class="form-fild">
+                    <input class="form-input" type="tel" name="tel" id="tel">
+                    <svg class="form-icon" width="18" height="24">
+                        <use href="./images/icons/icons.svg#modal-phone"></use>
+                    </svg>
+                </div>
+                <label class="form-label" for="email">Email</label>
+                <div class="form-fild">
+                    <input class="form-input" type="email" name="email" id="email" autocomplete="off">
+                    <svg class="form-icon" width="18" height="24">
+                        <use class="form-icon-fill" href="./images/icons/icons.svg#modal-email"></use>
+                    </svg>
+                </div>
+                <label class="form-label" for="comment">Comment</label>
+                <div class="textarea-comment">
+                    <textarea class="form-label-textarea" placeholder="Text input" name="comment"
+                        id="comment"></textarea>
+                </div>
+                <label class="form-label policy-label" for="policy-a">
+                    <input class="checkbox-input" type="checkbox" name="policy-a" id="policy-a">
+                    <svg class="checked-icon" width="16" height="16">
+                        <use class="checked" href="./images/icons/icons.svg#checked"></use>
+                        <use class="unchecked" href="./images/icons/icons.svg#unchecked"></use>
+                    </svg>
+                    <span class="policy">I accept the terms and conditions of the
+                        <a class="policy-a" href="./index.html">Privacy Policy
+                        </a>
+                    </span>
+                </label>
+                <button class="btn btn-modal" type="button" data-modal-open>Send</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
